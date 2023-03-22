@@ -1,0 +1,1 @@
+# Lazy Student Software Challenge
