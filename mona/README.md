@@ -13,7 +13,7 @@ Swarm robotics and football can be compared in terms of their use of collective 
 
 Each team will be issued with 2 MONA robots, an Arduino Nano and 3 NRF24 radio modules to help in the challenge.
 
-The football pitch for this challenge has been specially designed to track the position of both the robots and the balls placed on the board. 
+The football pitch for this challenge has been specially designed to track the position of both the robots and the football placed on the board. 
 
 The pose of each robot is updated and stored on a webpage located at 192.168.4.1 and each robot is denoted by a number on the top cover corresponding to a robot on the webpage. Only the robots and balls located in the arena are displayed on the webpage and in any order.
 
