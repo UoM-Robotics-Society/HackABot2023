@@ -20,6 +20,9 @@ The suggested route would involve:
 -	PC-to-Robot communication
 -	Basic robot locomotion
 
+To test your system come to the arena and connect to the WiFi MONA_Arena, Password: MONA_Arena
+Only 2 teams can test at a time.
+
 Useful links to information, websites and examples can be found in the info folder.
 
 Each team will be issued with 2 MONA robots, an Arduino Nano and 3 NRF24 radio modules to help in the challenge.
