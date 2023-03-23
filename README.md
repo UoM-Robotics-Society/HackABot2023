@@ -15,12 +15,12 @@ Saturday 13:00| Work begins, Inventory and Makerspace Open| Ground, 1st and 2nd 
 Saturday 14:00| CAD Workshop| 2A.013
 Saturday 16:00| Airbus Talk| 2A.013
 Saturday 18:00| Git workshop| Lecture Theatre A
-Saturday 19:00| Pizza!| Mecd Foyer
-Saturday 21:00| Bodgebot Maze Challenge| Mecd Foyer
+Saturday 19:00| Pizza!| MECD Foyer
+Saturday 21:00| Bodgebot Maze Challenge| MECD Foyer
 Saturday 22:00| Makerspace Closes| 
 Sunday 00:00| Games and Films| Lecture Theatre A and B
-Sunday 05:00| Bodgebot Race| Mecd Foyer
-Sunday 05:00| Breakfast Available| Mecd Foyer
+Sunday 05:00| Bodgebot Race| MECD Foyer
+Sunday 05:00| Breakfast Available| MECD Foyer
 Sunday 12:00| Judging begins| 
 Sunday 13:00| Closing ceremony| Lecture Theatre A
 
