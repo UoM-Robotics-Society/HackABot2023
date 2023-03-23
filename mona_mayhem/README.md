@@ -1,6 +1,6 @@
 # MONA Background
 
-![MONA](mona.jpg "")
+![MONA](/mona_mayhem/mona.jpg "")
 
 Swarm robotics is a field of research that explores the behaviour of large groups of simple robots that work together to achieve a common goal. The study of swarm robotics is motivated by the desire to develop intelligent, adaptive, and robust systems that can perform complex tasks in dynamic and uncertain environments.
 
