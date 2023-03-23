@@ -1,4 +1,8 @@
-# Mona Background
+# MONA Background
+
+![MONA](Mona.jpg?raw=true "MONA")
+
+
 Swarm robotics is a field of research that explores the behaviour of large groups of simple robots that work together to achieve a common goal. The study of swarm robotics is motivated by the desire to develop intelligent, adaptive, and robust systems that can perform complex tasks in dynamic and uncertain environments.
 
 One platform developed to enable researchers in this field were the MONA robots by the University of Manchester and sold by Ice9Robotics. These Arduino based differential drive robots can be used in many applications with a wide range of versatile features.
@@ -23,10 +27,14 @@ The suggested route would involve:
 -	PC-to-Robot communication
 -	Basic robot locomotion
 
-To test your system come to the arena and connect to the WiFi MONA_Arena, Password: MONA_Arena
+To test your system come to the arena and connect to the WiFi.
+```
+SSID: MONA_Arena
+Password: MONA_Arena
+```
 Only 2 teams can test at a time.
 
-Useful links to information, websites and examples can be found in the info folder.
+Useful links to information, websites and examples can be found in the [info](info) folder.
 
 For extra points, each team can fill out the MONA robot survey to provide feedback on the robots to help future development.
 
@@ -41,3 +49,5 @@ Winners will get prizes as well as their solution being hosted on the Ice9Roboti
 -	If the system or the battery become damaged in anyway report it to a supervisor (Purple shirt) and they will assist.
 -	Teams will have access to 3D printers if they wish to use them. They will need to follow the 3D printing document on the GitHub.
 -	Teams will have access to anything in the inventory which they may use in their solution.
+
+
