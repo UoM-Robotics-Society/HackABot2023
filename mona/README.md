@@ -7,7 +7,7 @@ In football, players work together to score goals and win matches. Each player h
 
 # Challenge
 
-### Using 2 MONA robots, create a basic swarm to play football against another team.
+## Using 2 MONA robots, create a basic swarm to play football against another team.
 
 
 
