@@ -11,7 +11,7 @@ Swarm robotics and football can be compared in terms of their use of collective 
 
 # Challenge
 
-<center>Create a basic swarm to play football against another team.</center>
+<center>## Create a basic swarm to play football against another team.</center>
 
 ## Info
 
