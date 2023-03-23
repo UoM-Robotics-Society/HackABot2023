@@ -20,8 +20,8 @@ Saturday 21:00| Bodgebot Maze Challenge| Mecd Foyer
 Saturday 22:00| Makerspace Closes| 
 Sunday 00:00| Games and Films| Lecture Theatre A and B
 Sunday 05:00| Bodgebot Race| Mecd Foyer
-Sunday 07:00| Breakfast!| Mecd Foyer
-Sunday 12:00| Judging begins| TBC
+Sunday 05:00| Breakfast Available| Mecd Foyer
+Sunday 12:00| Judging begins| 
 Sunday 13:00| Closing ceremony| Lecture Theatre A
 
 
