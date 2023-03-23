@@ -34,7 +34,7 @@ Password: MONA_Arena
 ```
 Only 2 teams can test at a time.
 
-Useful links to information, websites and examples can be found in the [info](mona_info) folder.
+Useful links to information, websites and examples can be found in the [info](info) folder.
 
 For extra points, each team can fill out the MONA robot survey to provide feedback on the robots to help future development.
 
