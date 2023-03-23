@@ -6,11 +6,9 @@ In this folder you will find a series of example HMTL script files which are exa
 
 the format M1,10,10,2 is robot, X, Y, Theta (rotation)
 
-G = Goal poses
-
-C = Corner poses
-
-B = ball pose
+    G = Goal poses
+    C = Corner poses
+    B = ball pose
 
 ## Example Sketches
 
