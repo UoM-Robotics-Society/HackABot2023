@@ -1,6 +1,6 @@
 # Mona Info
 
-The files here are to help you get started with the system, there are many GitHub repos with example sketches if you search for them, these are the main documents containing the relevant information.
+#### The files here are to help you get started with the system, there are many GitHub repos with example sketches if you search for them, these are the main documents containing the relevant information.
 
 To configure your Arduino IDE (1.8.3 or higher, please download from: https://www.arduino.cc/en/Main/Software) and to connect and program Mona robot, please follow the setting:
 
