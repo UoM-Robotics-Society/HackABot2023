@@ -37,7 +37,7 @@ Winners will get prizes as well as their solution being hosted on the Ice9Roboti
 -	Teams can use any resources online or otherwise to help them accomplish the task. 
 -	Teams are not allowed to remove the plastic battery cover and robot identifier.
 -	Teams are allowed to operate the robots on any table surface, on the ground away from foot traffic, or in the arena.
--	Teams are allowed to modify and add thing to the MONA robots to help improve there chances given it doesn’t damage the system. (Extra points will be awarded to innovative software and hardware designs).
--	If the system or the battery become damaged in anyway report it to a supervisor (Purple) and they will assist.
+-	Teams are allowed to modify and add things to the MONA robots to help improve there chances given it doesn’t damage the system. (Extra points will be awarded to innovative software and hardware designs).
+-	If the system or the battery become damaged in anyway report it to a supervisor (Purple shirt) and they will assist.
 -	Teams will have access to 3D printers if they wish to use them. They will need to follow the 3D printing document on the GitHub.
 -	Teams will have access to anything in the inventory which they may use in their solution.
