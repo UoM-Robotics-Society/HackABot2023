@@ -27,10 +27,14 @@ The suggested route would involve:
 -	PC-to-Robot communication
 -	Basic robot locomotion
 
-To test your system come to the arena and connect to the WiFi MONA_Arena, Password: MONA_Arena
+To test your system come to the arena and connect to the WiFi.
+```
+SSID: MONA_Arena
+Password: MONA_Arena
+```
 Only 2 teams can test at a time.
 
-Useful links to information, websites and examples can be found in the info folder.
+Useful links to information, websites and examples can be found in the [info](info) folder.
 
 For extra points, each team can fill out the MONA robot survey to provide feedback on the robots to help future development.
 
