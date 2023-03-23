@@ -1,4 +1,4 @@
-# Mona Background
+# MONA Background
 Swarm robotics is a field of research that explores the behaviour of large groups of simple robots that work together to achieve a common goal. The study of swarm robotics is motivated by the desire to develop intelligent, adaptive, and robust systems that can perform complex tasks in dynamic and uncertain environments.
 
 One platform developed to enable researchers in this field were the MONA robots by the University of Manchester and sold by Ice9Robotics. These Arduino based differential drive robots can be used in many applications with a wide range of versatile features.
