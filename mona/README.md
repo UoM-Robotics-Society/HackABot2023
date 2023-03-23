@@ -7,24 +7,25 @@ In football, players work together to score goals and win matches. Each player h
 
 # Challenge
 
-## Using 2 MONA robots, create a basic swarm to play football against another team.
-
-
+## Create a basic swarm to play football against another team.
 
 ## Info
 
-The football pitch for these MONAs to use has been specially designed to track the position of both the robots and the balls placed on the board. This pose of each robot is updated and stored on a webpage located at 192.168.4.1 and each robot is denoted by a number on the top cover corresponding to a robot on the webpage.
+The football pitch for this challenge has been specially designed to track the position of both the robots and the balls placed on the board. The pose of each robot is updated and stored on a webpage located at 192.168.4.1 and each robot is denoted by a number on the top cover corresponding to a robot on the webpage.
 Only the robots and balls located in the arena are displayed on the webpage and in any order.
 
 The suggested route would involve:
--	Creating a web scrapper for 192.168.4.1 to get point data
+-	Creating a web scrapper for 192.168.4.1 to receive pose data
 -	Swarm football control system
 -	PC-to-Robot communication
 -	Basic robot locomotion
 
-Useful links to information, websites and examples can be found at _____________.
+Useful links to information, websites and examples can be found in the info folder.
+
 Each team will be issued with 2 MONA robots, an Arduino Nano and 3 NRF24 radio modules to help in the challenge.
+
 For extra points, each team can fill out the MONA robot survey to provide feedback on the robots to help future development.
+
 Winners will get prizes as well as their solution being hosted on the Ice9Robotics GitHub for people to reference in CV, LinkedIn and other mediums.
 
 
