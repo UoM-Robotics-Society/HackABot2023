@@ -41,3 +41,5 @@ Winners will get prizes as well as their solution being hosted on the Ice9Roboti
 -	If the system or the battery become damaged in anyway report it to a supervisor (Purple shirt) and they will assist.
 -	Teams will have access to 3D printers if they wish to use them. They will need to follow the 3D printing document on the GitHub.
 -	Teams will have access to anything in the inventory which they may use in their solution.
+
+
