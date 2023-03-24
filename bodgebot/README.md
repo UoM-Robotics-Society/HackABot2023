@@ -6,7 +6,7 @@ Robot Fighting also more widely known as Robot Combat, is exactly what the name 
 ![image](https://user-images.githubusercontent.com/114879969/227642296-8de406c7-0c07-476a-b09a-110391b3e328.png)
 
 ## Main Challenge
- **Create a bodgebot from the resources provided and fight against the other teams in a tournament at the end of the 24 hrs.**
+ ### <div align="center"> Create a bodgebot from the resources provided and fight against the other teams in a tournament at the end of the 24 hrs. </div>
  
  ### Additional Challenges
  We're all about an underdog here so there will be *two* additional challenges to be held during the course of evening to help you earn extra points. The times are as follows:
