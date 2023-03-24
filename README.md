@@ -28,7 +28,7 @@ Sunday 13:00| Closing ceremony| Lecture Theatre A
 
 All information regarding the use of the Makerspace can be found in the health and safety folder. Please ensure you are inducted before using the space, if you have any questions regarding this find a member of the committee and ask them.
 
-For information regarding 3D Printing please refer to [this](health_and_safety/3D_Printing_Rules) document.
+For information regarding 3D Printing please refer to [this](health_and_safety/3D_Printing_Rules.pdf) document.
 
 Please join our [Discord] Server to see all the announcements!
 
