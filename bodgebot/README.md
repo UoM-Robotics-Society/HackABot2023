@@ -18,9 +18,9 @@ Robot Fighting also more widely known as Robot Combat, is exactly what the name 
  ### Design Rules 
  - None, so go crazy and be as creative as you want.
  ### Where to Operate
-Since the robots will be powered by lipos, teams will only be allowed to power up their robots in the dedicated Lipo area under the supervision of a hackathon helper. Further weapons can only be tested in the area under the supervision of a dedicated hackathon helper
+Since the robots will be powered by lipos, teams will only be allowed to power up their robots in the dedicated Lipo area under the supervision of a hackathon helper. Further, weapons can only be tested in the arena under the supervision of a dedicated hackathon helper
  ### Equipment
- Each team will be given a set of electronics that will allow them to create a simple driveable robtot. This set will include:
+ Each team will be given a set of electronics that will allow them to create a simple driveable robot. This set will include:
  - FlySky 4 Channel Receiver
  - 2 x BBB Edition Antweight Dual ESC v2.2
  - 2 x 6V Plastic Gearmotor with Plastic Wheel
