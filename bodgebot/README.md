@@ -10,8 +10,8 @@ Robot Fighting also more widely known as Robot Combat, is exactly what the name 
  
  ### Additional Challenges
  We're all about an underdog here so there will be *two* additional challenges to be held during the course of evening to help you earn extra points. The times are as follows:
- - Secret Challenge 1: 20:00
- - Secret Challenge 2: 05:00
+ - Secret Challenge 1: Saturday 20:00
+ - Secret Challenge 2: Sunday 05:00
  
  ## Rules
  
