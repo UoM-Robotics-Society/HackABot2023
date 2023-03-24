@@ -17,19 +17,20 @@ Saturday 16:00| Airbus Talk| 2A.013
 Saturday 18:00| Git workshop| Lecture Theatre A
 Saturday 19:00| Pizza!\*| MECD Foyer
 Saturday 21:00| Bodgebot Maze Challenge| MECD Foyer
-Saturday 22:00| Makerspace Closes| 
+Saturday 22:00| Makerspace Closes|
 Sunday 00:00| Games and Films| Lecture Theatre A and B
 Sunday 05:00| Bodgebot Race| MECD Foyer
 Sunday 05:00| Breakfast Available\*| MECD Foyer
-Sunday 12:00| Judging begins| 
+Sunday 12:00| Judging begins|
 Sunday 13:00| Closing ceremony| Lecture Theatre A
 
-###### *Pizza will be availbe later and breakfast earlier if required. All dietary requirements have been accomodated for.
+###### *Pizza will be available later and breakfast earlier if required. All dietary requirements have been accommodated for.
 
 All information regarding the use of the Makerspace can be found in the health and safety folder. Please ensure you are inducted before using the space, if you have any questions regarding this find a member of the committee and ask them.
+
+For information regarding 3D Printing please refer to [this](health_and_safety/3D_Printing_Rules) document.
 
 Please join our [Discord] Server to see all the announcements!
 
 
 [Discord]: <www.discord.com/invite/XBeRk9QXXj>
-
