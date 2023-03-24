@@ -1,6 +1,6 @@
 # Hackabot 2023
 
-![robosoc banner](banner.png "")
+![robosoc banner](.banner.png "")
 
 Welcome to the Robotic Society's Hack-A-Bot 2023!
 All information for the event can be found within these folders.
