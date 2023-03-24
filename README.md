@@ -25,7 +25,7 @@ Sunday 12:00| Judging begins|
 Sunday 13:00| Closing ceremony| Lecture Theatre A
 
 
-All information regarding the use of the Makerspace can be found in the makerspace folder. Please ensure you are inducted before using the space, if you have any questions regarding this find a member of the committee and ask them.
+All information regarding the use of the Makerspace can be found in the health and safety folder. Please ensure you are inducted before using the space, if you have any questions regarding this find a member of the committee and ask them.
 
 Please join our [Discord] Server to see all the announcements!
 
