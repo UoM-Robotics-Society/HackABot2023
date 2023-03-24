@@ -24,7 +24,7 @@ Sunday 05:00| Breakfast Available\*| MECD Foyer
 Sunday 12:00| Judging begins| 
 Sunday 13:00| Closing ceremony| Lecture Theatre A
 
-*Pizza will be availbe later and breakfast earlier if required. All dietary requirements have been accomodated for.
+###### *Pizza will be availbe later and breakfast earlier if required. All dietary requirements have been accomodated for.
 
 All information regarding the use of the Makerspace can be found in the health and safety folder. Please ensure you are inducted before using the space, if you have any questions regarding this find a member of the committee and ask them.
 
