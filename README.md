@@ -12,9 +12,9 @@ Saturday 11:00| Participants Arrive | MECD Foyer
 Saturday 12:00| Opening Presentation | Lecture Theatre A
 Saturday 12:30| Form your teams!| MECD Foyer
 Saturday 13:00| Work begins, Inventory and Makerspace Open| Ground, 1st and 2nd floor
-Saturday 14:00| CAD Workshop| 2A.013
-Saturday 16:00| Airbus Talk| 2A.013
-Saturday 18:00| Git workshop| Lecture Theatre A
+Saturday 14:00| CAD Workshop| 2A.011
+Saturday 16:00| Airbus Talk| 2A.011
+Saturday 18:00| Git workshop| 2A.011
 Saturday 19:00| Pizza!\*| MECD Foyer
 Saturday 21:00| Bodgebot Challenge 1| MECD Foyer
 Saturday 22:00| Makerspace Closes|
