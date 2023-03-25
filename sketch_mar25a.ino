@@ -5,7 +5,7 @@
 RF24 radio(7, 8);  // using pin 7 for the CE pin, and pin 8 for the CSN pin
 // Let these addresses be used for the pair
 int payload = 0;
-const byte address[6] = "00001"; // Define the address of the receiving NRF24L01+ module.
+const byte address[6] = "00008"; // Define the address of the receiving NRF24L01+ module.
 // pin config for basic platform test
 // Motors
 int Motor_right_PWM = 10;  //   0 (min speed) - 255 (max speed) 
@@ -144,21 +144,35 @@ void Send_sensor_readings(){
 // the loop routine runs over and over again forever:
 void loop() {
     uint8_t pipe;
+    Serial.println("YOOOO");
     if (radio.available(&pipe)) {              // is there a payload? get the pipe number that recieved it
       digitalWrite(LED1,HIGH);
       digitalWrite(LED2,HIGH);
       uint8_t bytes = radio.getPayloadSize();  // get the size of the payload
-      int oldPay = payload;
-      radio.read(&payload, sizeof(int));             // fetch payload from FIFO
-      if (payload != 0 and payload != 1 and payload != 2){
-        payload= oldPay;
+      char receivedData[bytes] = ""; // create a character array to store the received data
+      radio.read(&receivedData, bytes); // read the data into the character array
+      String receivedString = String(receivedData); // convert the character array to a string
+      receivedString.trim(); // remove any leading/trailing white space
+      Serial.println(receivedString);
+      const int MAX_VALUES = 5; // maximum number of values to split
+      int values[5]; // array to store the split values
+      int numValues = 0; // number of values split
+      int startIndex = 0;
+      int endIndex = 0;
+      while (endIndex >= 0 && numValues < MAX_VALUES) {
+        endIndex = receivedString.indexOf('_', startIndex);
+        if (endIndex >= 0) {
+          values[numValues] = receivedString.substring(startIndex, endIndex).toInt();
+          startIndex = endIndex + 1;
+        } else {
+          values[numValues] = receivedString.substring(startIndex).toInt();
+        }
+        numValues++;
       }
-      Serial.print(payload);
-      if (payload == 1){
-        forward();
-      }else if (payload == 2){
-        reverse(100);
-      }
+      analogWrite(Motor_right_PWM,values[3] ); // right motor
+      digitalWrite(Motor_right_direction,values[1]); //right
+      analogWrite(Motor_left_PWM, values[2]); // left 
+      digitalWrite(Motor_left_direction,values[0]); //left
       /*
       Serial.print(bytes);  // print the size of the payload
       Serial.print(F(" bytes on pipe "));
