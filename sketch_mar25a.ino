@@ -41,7 +41,7 @@ void setup() {
   //radio.setPayloadSize(sizeof(payload));  // float datatype occupies 4 bytes
 
   // set the RX address of the TX node into a RX pipe
-  radio.openReadingPipe(0, address);  // using pipe 1
+  radio.openReadingPipe(1, address);  // using pipe 1
 
   // additional setup specific to the node's role
   radio.startListening();  // put radio in RX mo
@@ -148,30 +148,25 @@ void loop() {
       digitalWrite(LED1,HIGH);
       digitalWrite(LED2,HIGH);
       //uint8_t bytes = radio.getPayloadSize();  // get the size of the payload
-      int len=0;
-      String receivedString;
-      //len = radio.getDynamicPayloadSize();
-      radio.read(&receivedString,100);
-      //String receivedString = String(gotmsg);
+      long data;
+      radio.read(&data, sizeof(long));
+      String receivedString = String(data);
+      //receivedString.trim(); // remove any leading/trailing white space
       Serial.println(receivedString);
-      receivedString.trim(); // remove any leading/trailing white space
       //Serial.println(receivedString);
-      const int MAX_VALUES = 6; // maximum number of values to split
-      int values[6]; // array to store the split values
-      int numValues = 0; // number of values split
-      int startIndex = 0;
-      int endIndex = 0;
-      while (endIndex >= 0 && numValues < MAX_VALUES) {
-        endIndex = receivedString.indexOf('_', startIndex);
-        if (endIndex >= 0) {
-          values[numValues] = receivedString.substring(startIndex, endIndex).toInt();
-          startIndex = endIndex + 1;
-        } else {
-          values[numValues] = receivedString.substring(startIndex).toInt();
-        }
-        numValues++;
-      }
-      if (values[0]==8){
+      int values[5]; // array to store the split values
+      values[0] = receivedString[0]- '0';
+      values[1] = receivedString[1]- '0';
+      values[2] = receivedString[2]- '0';
+      values[3] = receivedString.substring(3,6).toInt();
+      values[4] = receivedString.substring(6,9).toInt();
+      Serial.print(values[0]);Serial.print(",");
+      Serial.print(values[1]);Serial.print(",");
+      Serial.print(values[2]);Serial.print(",");
+      Serial.print(values[3]);Serial.print(",");
+      Serial.print(values[4]);Serial.println(",");
+      if (values[0]==7){
+        Serial.print("I'm moving!");
         analogWrite(Motor_right_PWM,values[4] ); // right motor
         digitalWrite(Motor_right_direction,values[2]); //right
         analogWrite(Motor_left_PWM, values[3]); // left 

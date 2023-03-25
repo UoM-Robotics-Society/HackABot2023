@@ -98,8 +98,11 @@ void loop() {
     }
     */
     //String newString = inputString.substring(2);
-    //Serial.print(newString);
-    bool report = radio.write(&inputString, 128);  // transmit & save the report
+    inputString.trim();
+    Serial.print(inputString);
+    long sen = atol(inputString.c_str());
+    Serial.println(sen);
+    bool report = radio.write(&sen, sizeof(long));  // transmit & save the report
     /*
     if (report){
       Serial.print("All good in the ");
