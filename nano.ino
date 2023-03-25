@@ -17,7 +17,7 @@
 RF24 radio(7, 8);  // using pin 7 for the CE pin, and pin 8 for the CSN pin
 
 // Let these addresses be used for the pair
-uint8_t address[][6] = { "1Node", "2Node" };
+const byte address[6] = "00001"; // Define the address of the receiving NRF24L01+ module.
 // It is very helpful to think of an address as a path instead of as
 // an identifying device destination
 
@@ -68,17 +68,13 @@ void setup() {
 
   // save on transmission time by setting the radio to only transmit the
   // number of bytes we need to transmit a float
-  radio.setPayloadSize(sizeof(payload));  // float datatype occupies 4 bytes
+  //radio.setPayloadSize(sizeof(int));  // float datatype occupies 4 bytes
 
   // set the TX address of the RX node into the TX pipe
-  radio.openWritingPipe(address[1]);  // always uses pipe 0
+  radio.openWritingPipe(address);  // always uses pipe 0
 
   // additional setup specific to the node's role
-  if (role) {
-    radio.stopListening();  // put radio in TX mode
-  } else {
-    radio.startListening();  // put radio in RX mode
-  }
+  radio.stopListening();  // put radio in TX mode
 
   // For debugging info
   // printf_begin();             // needed only once for printing details

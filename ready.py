@@ -1,7 +1,7 @@
 # Importing Libraries
 import serial
 import time
-arduino = serial.Serial(port='COM7', baudrate=9600, timeout=.1)
+arduino = serial.Serial(port='COM7', baudrate=115200, timeout=.1)
 def write_read(x):
     arduino.write(bytes(x, 'utf-8'))
     time.sleep(0.05)
@@ -11,5 +11,5 @@ def write_read(x):
 while True:
     data = arduino.readline()
     time.sleep(0.5)
-    value = write_read(num)
-    #print(value) # printing the value
+    #value = write_read(num)
+    print(data) # printing the value

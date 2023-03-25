@@ -5,7 +5,7 @@
 RF24 radio(7, 8);  // using pin 7 for the CE pin, and pin 8 for the CSN pin
 // Let these addresses be used for the pair
 int payload = 0;
-uint8_t address[][6] = { "1Node", "2Node" };
+const byte address[6] = "00001"; // Define the address of the receiving NRF24L01+ module.
 // pin config for basic platform test
 // Motors
 int Motor_right_PWM = 10;  //   0 (min speed) - 255 (max speed) 
@@ -30,6 +30,7 @@ void setup() {
   pinMode(LED1, OUTPUT);
   pinMode(LED2, OUTPUT);
   pinMode(IR_enable, OUTPUT);
+  radio.begin();
   // Set the PA Level low to try preventing power supply related problems
   // because these examples are likely run with nodes in close proximity to
   // each other.
@@ -37,10 +38,10 @@ void setup() {
 
   // save on transmission time by setting the radio to only transmit the
   // number of bytes we need to transmit a float
-  radio.setPayloadSize(sizeof(payload));  // float datatype occupies 4 bytes
+  //radio.setPayloadSize(sizeof(payload));  // float datatype occupies 4 bytes
 
   // set the RX address of the TX node into a RX pipe
-  radio.openReadingPipe(0, address[1]);  // using pipe 1
+  radio.openReadingPipe(0, address);  // using pipe 1
 
   // additional setup specific to the node's role
   radio.startListening();  // put radio in RX mo
@@ -153,12 +154,10 @@ void loop() {
         payload= oldPay;
       }
       Serial.print(payload);
-      if (payload == 0){
+      if (payload == 1){
         forward();
       }else if (payload == 2){
         reverse(100);
-      }else{
-        left(100);
       }
       /*
       Serial.print(bytes);  // print the size of the payload
