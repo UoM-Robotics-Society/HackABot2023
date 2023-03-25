@@ -5,7 +5,7 @@
 RF24 radio(7, 8);  // using pin 7 for the CE pin, and pin 8 for the CSN pin
 // Let these addresses be used for the pair
 int payload = 0;
-const byte address[6] = "00008"; // Define the address of the receiving NRF24L01+ module.
+const byte address[6] = "00001"; // Define the address of the receiving NRF24L01+ module.
 // pin config for basic platform test
 // Motors
 int Motor_right_PWM = 10;  //   0 (min speed) - 255 (max speed) 
@@ -23,7 +23,7 @@ int IR_threshold= 900; // 0 white close obstacle -- 1023 no obstacle
 
 void setup() {
 // initialize serial communication at 9600 bits per second:
- Serial.begin(9600);
+ Serial.begin(115200);
 // initialize Ports
   pinMode(Motor_left_PWM, OUTPUT);
   pinMode(Motor_right_PWM, OUTPUT);
@@ -144,18 +144,20 @@ void Send_sensor_readings(){
 // the loop routine runs over and over again forever:
 void loop() {
     uint8_t pipe;
-    Serial.println("YOOOO");
-    if (radio.available(&pipe)) {              // is there a payload? get the pipe number that recieved it
+    if (radio.available(&pipe)) {  
       digitalWrite(LED1,HIGH);
       digitalWrite(LED2,HIGH);
-      uint8_t bytes = radio.getPayloadSize();  // get the size of the payload
-      char receivedData[bytes] = ""; // create a character array to store the received data
-      radio.read(&receivedData, bytes); // read the data into the character array
-      String receivedString = String(receivedData); // convert the character array to a string
-      receivedString.trim(); // remove any leading/trailing white space
+      //uint8_t bytes = radio.getPayloadSize();  // get the size of the payload
+      int len=0;
+      String receivedString;
+      //len = radio.getDynamicPayloadSize();
+      radio.read(&receivedString,100);
+      //String receivedString = String(gotmsg);
       Serial.println(receivedString);
-      const int MAX_VALUES = 5; // maximum number of values to split
-      int values[5]; // array to store the split values
+      receivedString.trim(); // remove any leading/trailing white space
+      //Serial.println(receivedString);
+      const int MAX_VALUES = 6; // maximum number of values to split
+      int values[6]; // array to store the split values
       int numValues = 0; // number of values split
       int startIndex = 0;
       int endIndex = 0;
@@ -169,10 +171,12 @@ void loop() {
         }
         numValues++;
       }
-      analogWrite(Motor_right_PWM,values[3] ); // right motor
-      digitalWrite(Motor_right_direction,values[1]); //right
-      analogWrite(Motor_left_PWM, values[2]); // left 
-      digitalWrite(Motor_left_direction,values[0]); //left
+      if (values[0]==8){
+        analogWrite(Motor_right_PWM,values[4] ); // right motor
+        digitalWrite(Motor_right_direction,values[2]); //right
+        analogWrite(Motor_left_PWM, values[3]); // left 
+        digitalWrite(Motor_left_direction,values[1]); //left
+      }
       /*
       Serial.print(bytes);  // print the size of the payload
       Serial.print(F(" bytes on pipe "));

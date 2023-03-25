@@ -18,7 +18,7 @@
 RF24 radio(7, 8);  // using pin 7 for the CE pin, and pin 8 for the CSN pin
 
 // Let these addresses be used for the pair
-const byte address[][6] = {"00007","00008"}; // Define the address of the receiving NRF24L01+ module.
+const byte address[6] = "00001"; // Define the address of the receiving NRF24L01+ module.
 // It is very helpful to think of an address as a path instead of as
 // an identifying device destination
 
@@ -68,10 +68,10 @@ void setup() {
 
   // save on transmission time by setting the radio to only transmit the
   // number of bytes we need to transmit a float
-  radio.setPayloadSize(15);  // float datatype occupies 4 bytes
+  //radio.setPayloadSize(15);  // float datatype occupies 4 bytes
 
   // set the TX address of the RX node into the TX pipe
-  radio.openWritingPipe(address[0]);  // always uses pipe 0
+  radio.openWritingPipe(address);  // always uses pipe 0
 
   // additional setup specific to the node's role
   radio.stopListening();  // put radio in TX mode
@@ -87,6 +87,7 @@ void loop() {
   if (Serial.available()) {
     // change the role via the serial monitor
     String inputString = Serial.readString(); // read the string from Serial
+    /*
     char c = inputString[0];
     if (c == '7') {
       //Serial.print(reinterpret_cast<const char*>(address[0]));
@@ -95,9 +96,10 @@ void loop() {
       //Serial.print(reinterpret_cast<const char*>(address[1]));
       radio.openWritingPipe(address[1]);  // always uses pipe 0
     }
-    String newString = inputString.substring(2);
+    */
+    //String newString = inputString.substring(2);
     //Serial.print(newString);
-    bool report = radio.write(&newString, 15);  // transmit & save the report
+    bool report = radio.write(&inputString, 128);  // transmit & save the report
     /*
     if (report){
       Serial.print("All good in the ");
