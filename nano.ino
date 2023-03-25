@@ -94,6 +94,7 @@ void loop() {
     // This device is a TX node
 
     unsigned long start_timer = micros();                // start the timer
+    Serial.print(payload);
     bool report = radio.write(&payload, sizeof(int));  // transmit & save the report
     unsigned long end_timer = micros();                  // end the timer
     if (!report){
