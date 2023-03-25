@@ -17,6 +17,7 @@ Robot Fighting also more widely known as Robot Combat, is exactly what the name 
  
  ### Design Rules 
  - None, so go crazy and be as creative as you want.
+ - Apart from noting ridiculous like fire or water please
  ### Where to Operate
 Since the robots will be powered by lipos, teams will only be allowed to power up their robots in the dedicated Lipo area under the supervision of a hackathon helper. Further weapons can only be tested in the area under the supervision of a dedicated hackathon helper
  ### Equipment
