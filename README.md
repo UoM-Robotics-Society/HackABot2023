@@ -19,8 +19,9 @@ Saturday 19:00| Pizza!\*| MECD Foyer
 Saturday 21:00| Bodgebot Challenge 1| MECD Foyer
 Saturday 22:00| Makerspace Closes|
 Sunday 00:00| Games and Films| Lecture Theatre A and B
-Sunday 05:00| Bodgebot Challenge 2| MECD Foyer
-Sunday 05:00| Breakfast Available\*| MECD Foyer
+
+Sunday 04:45| Breakfast Available\*| MECD Foyer
+Sunday 08:30| Bodgebot Challenge 2| MECD Foyer
 Sunday 12:00| Judging begins|
 Sunday 13:00| Closing ceremony| Lecture Theatre A
 
